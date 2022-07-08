@@ -43,4 +43,4 @@ for i in a:
     dict1[i] = a.count(i)
 print(dict1)
 '''
-#6
+

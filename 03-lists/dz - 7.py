@@ -1,10 +1,11 @@
-numbers = [1, 2, 3, 1, 2, 3]
-i = 0
-count = 0
-for i in range(len(numbers)):
-    for number in numbers:
-        if number == numbers[i]:
-            count = count + 1
+numbers = list(map(int, input().split()))
 
+list_1 = []
+final_list = []
+for number in numbers:
+    list_1.append(number)
+    if list_1.count(number) <= 1:
+        final_list.append(number)
+print(final_list)
 
 

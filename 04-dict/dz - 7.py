@@ -1,3 +1,6 @@
+#Нужно дополнить код таким образом, чтобы он вывел все адреса в алфавитном порядке и
+# в формате имя_пользователя@домен.
+
 emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kirill_stepanov'],
        'gmail.com': ['alena.semyonova', 'ivan.polekhin', 'marina_abrabova'],
        'msu.edu': ['sergei.zharkov', 'julia_lyubimova', 'vitaliy.smirnoff'],

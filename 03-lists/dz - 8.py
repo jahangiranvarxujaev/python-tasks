@@ -1,3 +1,4 @@
+#удалить указанные символы
 a = [12, 'sdsdd', 678, 'dsd']
 print(a)
 b = input('What do you want to discard? ')

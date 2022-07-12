@@ -1,3 +1,4 @@
+#уникалные числа
 numbers = list(map(int, input().split()))
 common_list = []
 final_list = []

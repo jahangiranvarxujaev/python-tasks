@@ -4,10 +4,12 @@
 количество букв латинского алфавита;
 число слов;
 число строк.
-Пример ввода и вывода
-"""
+Пример ввода и вывода"""
+
 counterofletters = 0
+lines = 0
 with open("alice.txt", encoding='utf-8') as alice_text:
+
     alice_read = alice_text.read()
     counterofwords = 0
     list1 = alice_read.split(" ")
@@ -18,4 +20,12 @@ with open("alice.txt", encoding='utf-8') as alice_text:
             counterofletters = counterofletters +  len(count)
     for x in list1:
         counterofwords = counterofwords + 1
+
 print(counterofwords, " words", counterofletters, 'letters')
+
+file = open('alice.txt')
+lines = 0
+for line in file:
+    lines += 1
+print(lines, "Lines")
+file.close()

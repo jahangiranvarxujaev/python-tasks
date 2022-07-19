@@ -33,7 +33,7 @@ with open('infinity.txt', mode='w', encoding='utf-8') as infinity:
                 break
             store[question] = answer
     for key, value in store.items():
-        final_store = str(key) + " " + str(value) + '\n'
+        final_store = str(key) + " "*- + str(value) + '\n'
         infinity.write(final_store)
 
 

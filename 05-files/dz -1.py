@@ -6,22 +6,21 @@
 число строк.
 Пример ввода и вывода"""
 
-counterofletters = 0
+
+counter_of_letters = 0
+counter_of_words = 0
 lines = 0
 with open("alice.txt", encoding='utf-8') as alice_text:
+    alice_txt = alice_text.read()
+    alice_words = alice_txt.split()
 
-    alice_read = alice_text.read()
-    counterofwords = 0
-    list1 = alice_read.split(" ")
-    for word in alice_read:
-        for count in word:
-            if str(count).isspace():
+    for word in alice_txt:
+        for char in word:
+            if str(char).isspace():
                 continue
-            counterofletters = counterofletters +  len(count)
-    for x in list1:
-        counterofwords = counterofwords + 1
+            counter_of_letters += len(char)
 
-print(counterofwords, " words", counterofletters, 'letters')
+print(len(alice_words)+1, " words", counter_of_letters, 'letters')
 
 file = open('alice.txt')
 lines = 0
